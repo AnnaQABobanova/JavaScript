@@ -1,4 +1,6 @@
 //homeWork3
+
+function randomizer(){
 let evenCount = 0;
 let oddCount = 0;
 let totalCount = 0;
@@ -23,4 +25,7 @@ const percentageEven = (evenCount / totalCount) * 100;
 const percentageOdd = (oddCount / totalCount) * 100;
     
 console.log('Відсоток парних до не парних: ' + percentageEven.toFixed(1) +'%'+ ':' + percentageOdd.toFixed(1) + '%');
+}
+
+randomizer();
 
