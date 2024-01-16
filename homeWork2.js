@@ -18,7 +18,14 @@ let arr = [
     },
 ];
 
-let trustedEmails = arr.filter(function(obj) {
+let trustedEmails = arr.map(function(obj) {
+    return {
+            userName: obj.userName,
+            lastName: obj.lastName,
+            email: obj.email
+        };
+    })
+arr.filter(function(obj)){
     return /^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)?@(gmail\.com|yahoo\.com)$/.test(obj.email);
 });
 console.log(trustedEmails);
